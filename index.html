@@ -17,10 +17,19 @@
     <meta property="og:image" content="https://ihh.png">
     <meta property="og:url" content="https://www.indie.help">
     
-    <!-- Redirect after 0 seconds -->
-    <meta http-equiv="refresh" content="0; url=https://www.youtube.com/watch?v=q-Y0bnx6Ndw">
+    <!-- Increased delay to 2 seconds -->
+    <meta http-equiv="refresh" content="2; url=https://www.youtube.com/watch?v=q-Y0bnx6Ndw">
+    
+    <!-- Fallback JavaScript redirect -->
+    <script>
+        setTimeout(function() {
+            window.location.href = 'https://www.youtube.com/watch?v=q-Y0bnx6Ndw';
+        }, 2000);
+    </script>
 </head>
 <body>
-    <H1>Please wait 1 second while we load the course...</H1>
+    <H1 style="text-align: center; margin-top: 40px; font-family: Arial, sans-serif;">
+        Please wait while we load the course...
+    </H1>
 </body>
 </html>
